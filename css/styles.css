@@ -12,13 +12,13 @@
 main {
     text-align: center;
     width: 85%;
-    margin: 0 auto;
+    margin: 5rem auto 0;
 }
 h1 {
     /* color: var(--neutral1); */
     font-weight: 400;
     font-size: 1.4rem;
-    margin-bottom: 1.0rem;
+    margin: 3rem 0 1rem;
 }
 h2 {
     font-weight: 400;
@@ -46,7 +46,20 @@ p {
     flex-direction: column;
 }
 .button {
-
+    color: white;
+    font-size: 0.8rem;
+    padding: 0.7rem;
+    border: outset 1px var(--neutral2);
+    margin-bottom: 1.2rem;
+    border-radius: 1.5rem;
+}
+.ios {
+    background-color: var(--primary1);
+    box-shadow: 0 0.5rem 0.5rem -0.4rem var(--primary1);
+}
+.mac {
+    background-color: var(--primary2);
+    box-shadow: 0 0.5rem 0.5rem -0.4rem var(--primary2);
 }
 
 
