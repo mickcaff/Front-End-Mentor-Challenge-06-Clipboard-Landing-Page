@@ -1,6 +1,8 @@
 :root {
     --primary1: hsl(171, 66%, 44%);
+    --primary1-80: hsl(171, 66%, 44%, 80%);
     --primary2: hsl(233, 100%, 69%);
+    --primary2-80: hsl(233, 100%, 69%, 80%);
     --neutral1: hsl(210, 10%, 33%);
     --neutral2: hsl(201, 11%, 66%);
 }
@@ -9,10 +11,15 @@
     padding: 0;
     font-family: "Bai Jamjuree", sans-serif;
 }
+body {
+    background-image: url('../images/bg-header-mobile.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
 main {
     text-align: center;
     width: 85%;
-    margin: 5rem auto 0;
+    margin: 6rem auto 0;
 }
 h1 {
     /* color: var(--neutral1); */
@@ -23,7 +30,10 @@ h1 {
 h2 {
     font-weight: 400;
     font-size: 1.2rem;
-    margin: 5rem 0 1.0rem;
+    margin: 6rem 0 1.0rem;
+}
+h2:nth-of-type(3){
+    margin: 4rem 0 1.0rem;
 }
 h3 {
     font-weight: 400;
@@ -36,7 +46,6 @@ p {
     line-height: 1.7;
     margin-bottom: 2rem;
 }
-
 
 .logo {
     width: 85px;
@@ -57,12 +66,28 @@ p {
     background-color: var(--primary1);
     box-shadow: 0 0.5rem 0.5rem -0.4rem var(--primary1);
 }
+.ios:hover {
+    background-color: var(--primary1-80);
+}
 .mac {
     background-color: var(--primary2);
     box-shadow: 0 0.5rem 0.5rem -0.4rem var(--primary2);
 }
-
-
+.mac:hover {
+    background-color: var(--primary2-80);
+}
 .device-image, .computer-image {
     width: 100%;
+}
+.supercharge-text {
+    margin-bottom: 4rem;
+}
+.icons {
+    width: 32px;
+}
+
+@media (min-width: 600px){
+    body {
+        background-image: url('../images/bg-header-desktop.png');
+    }
 }
