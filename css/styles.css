@@ -136,7 +136,7 @@ p {
     text-align: center;
 }
 
-@media (min-width: 500px){
+@media (min-width: 800px){
     body {
         background-image: url('../images/bg-header-desktop.png');
     }
