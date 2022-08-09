@@ -5,6 +5,7 @@
     --primary2-80: hsl(233, 100%, 69%, 80%);
     --neutral1: hsl(210, 10%, 33%);
     --neutral2: hsl(201, 11%, 66%);
+    --neutral3: hsl(211, 20%, 97%);
 }
 * {
     margin: 0;
@@ -84,6 +85,53 @@ p {
 }
 .icons {
     width: 32px;
+}
+.logos-section {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 0 4rem;
+}
+.partner-logo {
+    width: 40%;
+    margin: 3rem auto 0;
+}
+.footer-section {
+    background-color: var(--neutral3);
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    align-items: center;
+}
+.logo-footer {
+    margin: 3rem 0;
+    width: 40px;
+}
+.footer-links-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-links {
+    color: var(--neutral2);
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+    text-decoration: none;
+}
+.social-icons-div {
+    margin: 2rem 0;
+}
+.social-icons {
+    margin-right: 2rem;
+    width: 18px;
+}
+.social-icons:nth-of-type(3) {
+    margin-right: 0;
+}
+.attribution {
+    font-size: 0.8rem;
+    width: 100vw;
+    padding: 1%;
+    text-align: center;
 }
 
 @media (min-width: 600px){
